@@ -1,0 +1,13 @@
+    $green:red;
+
+.headerTop{
+    &__container{
+        display: flex;
+    }
+    p{
+        color: $green;
+    }
+    h4{
+        color: $green;
+    }
+}
