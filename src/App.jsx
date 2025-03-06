@@ -9,7 +9,6 @@ import './Global/style.scss'
 import Cart from './pages/Cart/Cart'
 import Product from './pages/Product/Product'
 import Login from './pages/Login/Login'
-
 const App = () => {
   return (
     <>
