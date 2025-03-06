@@ -1570,6 +1570,9 @@
     fastq "^1.6.0"
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d05f09ff81bec43cd970b6476c7026460d8e3d85
 "@parcel/watcher-win32-x64@2.5.1":
   version "2.5.1"
   resolved "https://registry.npmjs.org/@parcel/watcher-win32-x64/-/watcher-win32-x64-2.5.1.tgz"
@@ -4850,12 +4853,15 @@ fs.realpath@^1.0.0:
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 fsevents@^2.3.2, fsevents@~2.3.2:
   version "2.3.3"
   resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 >>>>>>> 47af3aea6ae98de630b2347fd5c862aee8b30fb1
+>>>>>>> d05f09ff81bec43cd970b6476c7026460d8e3d85
 function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
