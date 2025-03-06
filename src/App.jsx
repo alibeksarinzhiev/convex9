@@ -9,6 +9,7 @@ import './Global/style.scss'
 import Cart from './pages/Cart/Cart'
 import Product from './pages/Product/Product'
 import Login from './pages/Login/Login'
+import FormCart from './pages/Cart/form/FormCart'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='' element={<Home/>}/>
           <Route path='catalog' element={<Catalog/>}/>
           <Route path='cart' element={<Cart/>}/>
+          <Route path='fromalise' element={<FormCart/>}/>
           <Route path='product' element={<Product/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Route>

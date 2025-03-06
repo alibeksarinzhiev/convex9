@@ -1,0 +1,56 @@
+.onecartprod {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 141px;
+      img{
+            width: 78px;
+            height: 62px;
+      }
+      border-bottom: 1px solid rgba(240, 240, 240, 1);
+      .cancel{
+            position: absolute;
+      }
+}
+
+.desc {
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+
+      .title {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: rgba(48, 48, 48, 1);
+      }
+
+      .count {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: rgba(171, 171, 171, 1);
+      }
+}
+
+.counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      width: 127px;
+      height: 40px;
+      border: 1.5px solid rgba(70, 197, 120, 1);
+      border-radius: 10px;
+      button{
+            cursor: pointer;
+            color: rgba(70, 197, 120, 1);
+            background: none;
+            border: none;
+            font-size: 30px;
+      }
+}
