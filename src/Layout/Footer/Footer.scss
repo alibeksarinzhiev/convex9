@@ -1,0 +1,59 @@
+.footer{
+     &__footerTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #A7AED2;
+        padding: 41px 0 31px 0 ;
+        border-bottom: 1px solid #A7AED2;
+    }
+    ul{
+        display: flex;
+        gap: 45px;
+    }
+    ul li a{
+        text-decoration: none;
+        color:#303030 ;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    &__phone-number p{
+        color:#A7AED2 ;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.8px;
+        margin-bottom: 5px;
+    }
+    &__phone-number h5{
+        color: #303030;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26.4px;
+        margin-bottom:5px ;
+    }
+    &__phone-number h4{
+        color: #303030;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    &__footerBottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0 37px;
+    }
+    &__footerBottom ul li a{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: #121212;
+    }
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
