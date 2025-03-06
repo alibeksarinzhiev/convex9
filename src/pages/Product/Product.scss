@@ -1,0 +1,143 @@
+.links a{
+    line-height: 16.8px;
+    text-decoration: none;
+    color: #A7AED2;
+}
+.main_product {
+    display: flex;
+    align-items: center ;
+}
+.Prod_img {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.prod_name {
+    font-size: 36px;
+    line-height: 43.2px;
+}
+.price_chart {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.prod_price {
+    color: #C54646;
+    font-size: 36px;
+}
+.prod_old_price {
+    color: #E2E2E2;
+    font-size: 24px;
+    text-decoration: line-through;
+}
+.prod_weight {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-top: 35px;
+}
+.prod_weight span {
+    font-weight: bold;
+}
+.prod_avalible span {
+    font-weight: bold;
+    margin-top: 5px;
+}
+.incart_btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #46C578;
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.incart_btn:hover {
+    background-color: #1f8044;
+}
+.incart_btn:active {
+    background-color: #57f596;
+}
+.prod_detial  {
+    font-size: 15px;
+    line-height: 22.5px;
+    width: 480px;
+    height: 92px;
+    margin-top: 30px;
+}
+.sug_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sug_top h1 {
+    font-size: 42px;
+    color: #303030;
+    font-weight: 500;
+    line-height: 50.4px;
+}
+.view_all {
+    color: #46C578;
+    font-size: 18px;
+    text-decoration: none;
+}
+.prod_card {
+    width: 250px;
+    height: 386px;
+}
+.prod_photo {
+    width: 250px;
+    height: 180px;
+}
+    .prod_wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 60px;
+    }
+    .sug_prod_name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+    }
+    .weight_avalible {
+        margin-top: 10px;
+    }
+    .price_chart_sug {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 52px;
+    }
+    .sug_old_price {
+        text-decoration: line-through;
+        color: #D6D5D5;
+        font-size: 18px;
+    }
+    .sug_new_price {
+        color: #FF3D3D;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .sug_incart-btn {
+        width: 128px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        color: #FFFFFF;
+        background-color: #46C578;
+        position: relative;
+        bottom: 40px;
+        left: 100px;
+        cursor: pointer;
+    }
+    .sug_incart-btn:hover {
+        background-color: #1f8044;
+    }
+    .sug_incart-btn:active {
+        background-color:#57f596 ;
+    }
+    .sug_avalible {
+        color: #46C578;
+    }
