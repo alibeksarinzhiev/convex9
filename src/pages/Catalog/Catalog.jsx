@@ -1,9 +1,15 @@
 import React from 'react'
 import  './Catalog.scss'
 import prod_img from './images/image 3.png'
-const Catalog = () => {
+import { useState } from 'react'
+import OneProduct from '../../Components/OneProduct'
+
+const Catalog = ({data}) => {
+
+
   return (
     <div className='main'>
+      <h1>{data}</h1>
     <div className='container'>
       <section className='Search'>
       <div className='search__left'>
@@ -52,141 +58,15 @@ const Catalog = () => {
           <p>По увеличению цены</p>
         </div>
       <div className="prod_wrapper">
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
-            <div className="prod_card">
-              <img src={prod_img} alt="#" className='prod_photo' />
-              <p className='sug_prod_name'>Конина тушеная Улан, есть
-              возможность в 2 строки</p>
-              <div className="weight_avalible">
-                <p className='sug_avalible'>В наличии: 11 шт.</p>
-                <p>Вес: 130гр</p>
-              </div>
-                <div className="price_chart_sug">
-                  <p className='sug_old_price'>28 030 тг.</p>
-                  <p className='sug_new_price'>24 320 тг.</p>
-                  <button className='sug_incart-btn'>В корзину</button>
-                </div>
-                
-            </div>
+            <OneProduct/>
+            <OneProduct/>
+            <OneProduct/>
+            <OneProduct/>
+            <OneProduct/>
+            <OneProduct/>
+            <OneProduct/>
+            <OneProduct/>
+            <OneProduct/>
             
           </div>
       </div>

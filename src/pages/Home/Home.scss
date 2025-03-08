@@ -1,7 +1,7 @@
 .banner__top {
     margin-top: 50px;
 
-    width: 1180px;
+  
     height: 483px;
     display: flex;
 
@@ -64,6 +64,7 @@
 }
 
 .banner__bottom {
+    width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -112,8 +113,7 @@
         height: 260px;
         border-radius: 12px;
         background: linear-gradient(171.27deg, #A8CBFF -6.86%, #7BB0FF 93.34%);
-        position: relative;
-        left: 20px;
+       
 
     }
 
@@ -498,6 +498,10 @@
     .sug_avalible {
         color: #46C578;
     }
+}
+.banner__right__bottom{
+    display: flex;
+    justify-content: space-between;
 }
 
 
