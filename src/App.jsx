@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Home from './pages/Home/Home'
 import Catalog from './pages/Catalog/Catalog'
 import { Route,Routes } from 'react-router-dom'
@@ -10,13 +10,17 @@ import Cart from './pages/Cart/Cart'
 import Product from './pages/Product/Product'
 import Login from './pages/Login/Login'
 const App = () => {
+
+
+  const [data,setData] = useState('alibek2')
+
   return (
     <>
    
       <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route path='' element={<Home/>}/>
-          <Route path='catalog' element={<Catalog/>}/>
+          <Route path='' element={<Home setData={setData} data={data}/>}/>
+          <Route path='catalog' element={<Catalog setData={setData} data={data}/>}/>
           <Route path='cart' element={<Cart/>}/>
           <Route path='product' element={<Product/>}/>
           <Route path='*' element={<NotFound/>}/>
