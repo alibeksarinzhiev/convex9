@@ -10,12 +10,16 @@ import { useState } from 'react'
 import NewsData from '../../Components/NewsData'
 import { dataNews } from '../../data/data'
 import OneProduct from '../../Components/OneProduct'
+import { useSelector } from 'react-redux'
 
-const Home = ({data}) => {
+const Home = () => {
+
+
+ 
  
   return (
     <main className='home'>
-      <h1>{data}</h1>
+      <h1></h1>
       <section className='banner'>
         <div className="banner__container container">
           <div className="banner__top">

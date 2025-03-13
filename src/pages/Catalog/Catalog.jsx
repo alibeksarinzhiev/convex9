@@ -3,13 +3,16 @@ import  './Catalog.scss'
 import prod_img from './images/image 3.png'
 import { useState } from 'react'
 import OneProduct from '../../Components/OneProduct'
+import { useDispatch, useSelector } from 'react-redux'
 
-const Catalog = ({data}) => {
+const Catalog = () => {
+  const dispatch = useDispatch()
 
-
+  
   return (
     <div className='main'>
-      <h1>{data}</h1>
+      <h1></h1>
+      <button >ru</button>
     <div className='container'>
       <section className='Search'>
       <div className='search__left'>
