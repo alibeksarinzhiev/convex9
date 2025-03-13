@@ -12,15 +12,14 @@ import Login from './pages/Login/Login'
 const App = () => {
 
 
-  const [data,setData] = useState('alibek2')
+ 
 
   return (
     <>
-   
       <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route path='' element={<Home setData={setData} data={data}/>}/>
-          <Route path='catalog' element={<Catalog setData={setData} data={data}/>}/>
+          <Route path='' element={<Home/>}/>
+          <Route path='catalog' element={<Catalog/>}/>
           <Route path='cart' element={<Cart/>}/>
           <Route path='product' element={<Product/>}/>
           <Route path='*' element={<NotFound/>}/>
@@ -28,6 +27,9 @@ const App = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
       </Routes>
+
+    
+       
       
     </>
   )
