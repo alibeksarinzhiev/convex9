@@ -1,0 +1,97 @@
+.registerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;  
+        .registerTopText {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+                .goBack {
+                    width: 36px;
+                    height: 36px;
+                    background-color: rgba(70, 197, 120, 1);
+                    border-radius: 50%;
+                }
+        }
+}
+.registerMainContent {
+    padding-top: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        h2 {
+            font-weight: 500;
+            font-size: 42px;
+            color: rgba(0, 0, 0, 1);
+            margin-bottom: 30px;
+        }
+        .registerBox {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            margin-bottom: 23px;
+                
+        }
+}
+.registerBox {
+    
+    .registerLine {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            color: rgba(48, 48, 48, 1);
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 17px 0 17px 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(167, 174, 210, 1);
+            font-weight: 300;
+            font-size: 16px;
+            outline: none;
+        }
+        .choose {
+            padding-right: 40px;
+        }
+    }
+}
+.or {
+    font-weight: 300;
+    font-size: 14px;
+    padding: 20px 0;
+}
+.otherOptions {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+    color: #46C578;
+    margin-top: 30px;
+}
+.regPageLink {
+    width: 380px;
+    border-radius: 10px;
+    border: none;
+    border-width: 1.5px;
+    padding: 14px 0 14px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #46C578;
+    border: 1px solid #46C578;
+}
+.enter {
+    width: 380px;
+    border-radius: 10px;
+    border: none;
+    border-width: 1.5px;
+    padding: 14px 0 14px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #46C578;
+}
