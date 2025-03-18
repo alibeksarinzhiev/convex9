@@ -1,11 +1,17 @@
-
+import { useSelector } from 'react-redux'
 import img6 from '../pages/Home/image 3.png'
-const OneProduct = () => {
+const OneProduct = ({item}) => {
+
+  const {data,isLoading} = useSelector(state=>state.products)
+  if(item){
+    return(
+      <h1>isLoading</h1>
+    )
+  }else{
   return (
     <div className="prod_card">
-    <img src={img6} alt="#" className='prod_photo' />
-    <p className='sug_prod_name'>Конина тушеная Улан, есть
-      возможность в 2 строки</p>
+    {/* <img src={item.images[0].url} alt="#" className='prod_photo' /> */}
+    <p className='sug_prod_name'>{item?.name}</p>
     <div className="weight_avalible">
       <p className='sug_avalible'>В наличии: 11 шт.
       </p>
@@ -19,6 +25,6 @@ const OneProduct = () => {
 
   </div>
   )
-}
+}}
 
 export default OneProduct

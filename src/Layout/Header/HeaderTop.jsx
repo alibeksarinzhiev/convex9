@@ -1,8 +1,17 @@
+import { useDispatch, useSelector } from "react-redux"
 import logoImage from "./image/image 1.png"
 import locationImage from "./image/Location.png"
 import searchIcon from "./image/Search.png"
+import { userLogout } from "../../store/userSlice"
 
 const HeaderTop = () => {
+
+  const user = useSelector(state=>state.user.user.username)
+  const dispatch = useDispatch()
+  const logout = ()=>{
+    dispatch(userLogout())
+  }
+
   return (
     <div className="headerTop">
       <div className="headerTop__container container">
@@ -20,7 +29,7 @@ const HeaderTop = () => {
               </div>
               <p>Нур-Султан</p>
             </div>
-            <button>Войти</button>
+            <button onClick={()=>logout()}>{user?'Выйти':'Войти'}</button>
       </div>
     </div>
   )

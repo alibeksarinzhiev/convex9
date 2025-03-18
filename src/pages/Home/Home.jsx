@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from './Rectangle 3.png'
 import img2 from './artage-io-thumb-16198c8e109d22e6d72d411c890c655a 1@2x.png'
 import img3 from './paket.png'
@@ -14,8 +14,13 @@ import { useSelector } from 'react-redux'
 
 const Home = () => {
 
-
- 
+  const {data,isLoading} = useSelector(state=>state.products)
+  
+if(isLoading){
+  return (
+    <h1>идет загрузка</h1>
+  )
+} else{
  
   return (
     <main className='home'>
@@ -57,10 +62,25 @@ const Home = () => {
           </div>
           <div className="prod_wrapper">
             
-            <OneProduct/>
-            <OneProduct/>
-            <OneProduct/>
-            <OneProduct/>
+          {
+         data?.map((item)=>(
+          <div className="prod_card">
+    <img crossOrigin="anonymous" src={item.images[0].url} alt="#" className='prod_photo' />
+    <p className='sug_prod_name'>{item?.name}</p>
+    <div className="weight_avalible">
+      <p className='sug_avalible'>{item.desc}
+      </p>
+      {/* <p>Вес: 130гр</p> */}
+    </div>
+    <div className="price_chart_sug">
+      {/* <p className='sug_old_price'>{item.price}</p> */}
+      <p className='sug_new_price'>{item.price} сом</p>
+      <button className='sug_incart-btn'>В корзину</button>
+    </div>
+
+          </div>
+       ))
+        }
           </div>
 
         </div>
@@ -96,6 +116,6 @@ const Home = () => {
       </section>
     </main>
   )
-}
+}}
 
 export default Home
