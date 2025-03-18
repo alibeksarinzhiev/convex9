@@ -26,7 +26,7 @@ const registerUser = ()=>{
     city,
     password
   }
-  axios.post('https://macaron.onrender.com/api/users/reg',user)
+  axios.post('https://macaron-production.up.railway.app/api/users/reg',user)
 
 }
 

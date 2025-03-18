@@ -5,7 +5,7 @@ import axios from "axios";
 export const fetchProducts = createAsyncThunk(
     'products/fetchProducts',
     async ()=>{
-        const res = await axios('https://macaron.onrender.com/api/products')
+        const res = await axios('https://macaron-production.up.railway.app/api/products')
         return res.data
     }
 )
