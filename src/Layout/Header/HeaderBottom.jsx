@@ -1,12 +1,13 @@
 import React from 'react'
 import cartImage from "./image/cart.png"
+import { Link } from 'react-router-dom'
 
 const HeaderBottom = () => {
   return (
     <div className="headerBottom">
      <div className="headerBottom__container container">
 <ul>
-  <li>Продукты</li> 
+  <li><Link to= './catalog'>Продукты </Link></li> 
   <li>Еда быстрого приготовления</li>
   <li>Консервы</li>
   <li>Напитки</li>
